@@ -17,7 +17,7 @@ app.use('/api/modulos', modulos);
 
 //importante para conexion del front con el back
 //Uso de cors
-app.use(cors({origin: '*'}));
+app.use(cors({origin: 'https://s4i3n.csb.app/'}));
 // conectar con el link de su frontend app.use(cors({origin: 'https://ppi-app.vercel.app/'}))
 
 app.get('/',(req,res)=>{
