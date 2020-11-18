@@ -1,9 +1,9 @@
 const mysql = require('mysql');
 const mysqlConnection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'base_datos_semana_8',
+    host: 'bt7pvjirejlpi0cakdfh-mysql.services.clever-cloud.com',
+    user: 'uxhghttligjvbcgr',
+    password: '3UQSS41qbgbha2QQ8yjm',
+    database: 'bt7pvjirejlpi0cakdfh',
     multipleStatements: true
 });
 
