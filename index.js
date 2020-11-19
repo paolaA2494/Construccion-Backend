@@ -4,7 +4,10 @@ const cors = require('cors');
 const actores = require('./routes/actores');
 const modulos = require('./routes/modulos');
 
-
+//importante para conexion del front con el back
+//Uso de cors
+app.use(cors({origin: '*'}));
+// conectar con el link de su frontend app.use(cors({origin: 'https://ppi-app.vercel.app/'}))
 
 app.set('port', process.env.PORT || 4001);
 
@@ -14,11 +17,6 @@ app.use(express.json());
 app.use('/api', actores);
 app.use('/api/modulos', modulos);
 
-
-//importante para conexion del front con el back
-//Uso de cors
-app.use(cors({origin: ''}));
-// conectar con el link de su frontend app.use(cors({origin: 'https://ppi-app.vercel.app/'}))
 
 app.get('/',(req,res)=>{
     res.send('hola este es mi deploy')
